@@ -4,17 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { IgxGridModule } from 'igniteui-angular';
+import { IgxGridModule, IgxTreeGridModule } from 'igniteui-angular';
+import { TreeGridComponent } from './tree-grid/tree-grid.component';
+import { NormalGridComponent } from './normal-grid/normal-grid.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TreeGridComponent,
+    NormalGridComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxGridModule
+    IgxGridModule,
+    IgxTreeGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
